@@ -127,7 +127,6 @@
                         }
                     return true;
                 }else{
-                    //alert(textData);
                     jG.html("ERREUR: Vos donn\351es ne sont pas au bon format!");
                 }
                 return false;
@@ -154,7 +153,7 @@
                 var colwidth = params.width/numcol;
                 
                 var numrow = maxData[dsd]-minData[dsd]+params.marginTop+params.marginBottom;
-                var rowwidth = (params.height)/numrow;
+                var rowwidth = ((h)/numrow);
                 if(params.grid=="verticalonly"||params.grid==true){
                     for(var d=1;d<numcol;d++){
                         ctx.fillStyle = themes[params.theme][2];
@@ -163,15 +162,17 @@
                 }
                 if(params.grid=="horizontalonly"||params.grid==true){
                     for(var d=minData[dsd];d<(numrow+parseInt(minData[dsd]));d++){
-                    console.log(d);
+                        var ecart = (maxData[dsd]-minData[dsd])/15;
+                        if(ecart<3||data.indexOf(String(d))!=-1){
                         ctx.fillStyle = themes[params.theme][2];
-                        var texttoprint = String(d-1);
+                        var texttoprint = String(d);
                         if(d!=(numrow+parseInt(minData[dsd]))-1){
                             ctx.fillRect(1,h-(d-minData[dsd]+params.marginBottom)*rowwidth,w-2,1);
                         }
                         ctx.fillStyle = themes[params.theme][3];
                         ctx.textAlign   = "right";
-                        ctx.fillText(texttoprint,w-2,h-(d-minData[dsd]+params.marginBottom-1)*rowwidth-3);
+                        ctx.fillText(texttoprint,w-2,h-(d-minData[dsd]+params.marginBottom)*rowwidth-3);
+                        }
                     }
                 }
                 for(var d in data){
