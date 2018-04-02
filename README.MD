@@ -15,7 +15,7 @@ From release
 ```
 Or from CDN hosted by [jsDelivr](https://www.jsdelivr.com/)
 ```html
-<script src="//cdn.jsdelivr.net/gh/Leoche/jGraphics@1.0.0/jGraphics.js" type="text/javascript"></script>
+<script src="//cdn.jsdelivr.net/gh/Leoche/jGraphics@1.1.0/jGraphics.js" type="text/javascript"></script>
 ```
 #### 3. Create your Data
 
