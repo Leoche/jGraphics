@@ -1,4 +1,6 @@
-![jGraphics Logo](/home/leo/Images/jgraphics.png)
+<p align="center">
+<img src="./medias/logo.png">
+</p>
 
 ## Installation
 #### 1. First include jQuery before `</body>`
@@ -30,6 +32,10 @@ Or from CDN hosted by [jsDelivr](https://www.jsdelivr.com/)
     })(jQuery);
 </script>
 ```
+
+<p align="center">
+<img src="./medias/example1.png">
+</p>
 
 ## Usage
 
@@ -83,7 +89,9 @@ $(".graphiques-ex1").jGraphics({
 
 Result:
 
-![jGraphics](/home/leo/Images/jq0.png)
+<p align="center">
+<img src="./medias/example2.png">
+</p>
 
 ### Example 2
 
@@ -103,3 +111,6 @@ $(".graphiques-ex2").jGraphics({
 });
 ```
 
+<p align="center">
+<img src="./medias/example3.png">
+</p>
